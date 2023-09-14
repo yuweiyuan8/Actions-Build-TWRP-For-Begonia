@@ -20,7 +20,7 @@ env:
   Rec_ver: 3.6.0
   Rec_url: https://github.com/RC1844/platform_manifest_twrp_omni.git -b twrp-7.1
   device: Z00A
-  DT_url: https://github.com/teamwin/android_device_asus_Z00A -b android7.1
+  DT_url: https://github.com/teamwin/android_device_asus_Z00A -b android-7.1
   DT_path: device/asus/Z00A
   ProductFileHeader: omni
   target: recoveryimage
