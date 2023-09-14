@@ -18,10 +18,10 @@ on:
 env:
   Rec_name: TWRP
   Rec_ver: 3.6.0
-  Rec_url: https://github.com/RC1844/platform_manifest_twrp_omni.git -b twrp-10.0
+  Rec_url: https://github.com/RC1844/platform_manifest_twrp_omni.git -b twrp-7.1
   device: begonia
-  DT_url: https://github.com/RC1844/twrp_redmi_begonia -b MIUI-android-11.0
-  DT_path: device/redmi/begonia
+  DT_url: https://github.com/teamwin/android_device_asus_Z00A -b android7.1
+  DT_path: device/asus/Z00A
   ProductFileHeader: omni
   target: recoveryimage
   WorkSpace: WorkSpace
