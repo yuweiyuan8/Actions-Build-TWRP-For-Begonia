@@ -145,9 +145,8 @@ jobs:
         swap-size-gb: 12
     - name: path
       run: |
-        sudo sed -i 's/strchrnul/strchr/g' bionic/libc/include
-/string.h 
-    
+        sudo sed -i 's/strchrnul/strchr/g' bionic/libc/include/string.h 
+
     - name: Building recovery
       run: |
         source build/envsetup.sh
