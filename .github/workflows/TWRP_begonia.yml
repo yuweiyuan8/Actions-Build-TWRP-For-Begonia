@@ -143,11 +143,13 @@ jobs:
       uses: pierotofy/set-swap-space@master
       with:
         swap-size-gb: 12
-
+    - name: path
+      run: |
+        sudo sed -i 's/strchrnul/strchr/g' bionic/libc/include
+/string.h 
+    
     - name: Building recovery
       run: |
-        sed -i 's/strchrnul/strchr/g' bionic/libc/include
-/string.h 
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
